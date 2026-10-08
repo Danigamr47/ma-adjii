@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#f8f4ec"
+    >
+
+    <meta
+        name="description"
+        content="Une petite surprise pour ma ADJIII ❤️"
+    >
+
+    <title>Ma ADJIII ❤️</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         MUSIQUE
+    ====================================================== -->
+
+    <audio
+        id="backgroundMusic"
+        loop
+        preload="auto"
+    >
+        <source
+            src="assets/music/musique.mp3"
+            type="audio/mpeg"
+        >
+
+        Votre navigateur ne prend pas en charge
+        la lecture audio.
+    </audio>
+
+
+    <!-- =====================================================
+         CONTENEUR DES CŒURS
+    ====================================================== -->
+
+    <div id="heartsContainer"></div>
+
+
+    <!-- =====================================================
+         CONTRÔLES FLOTTANTS
+    ====================================================== -->
+
+    <div class="floating-controls">
+
+        <button
+            class="music-button"
+            id="musicButton"
+            type="button"
+            aria-label="Mettre la musique en pause"
+            title="Musique"
+        >
+            <span
+                class="music-icon"
+                id="musicIcon"
+            >♫</span>
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         PROGRESSION
+    ====================================================== -->
+
+    <div
+        class="surprise-progress"
+        id="surpriseProgress"
+        aria-label="Progression de la surprise"
+    >
+
+        <span
+            class="progress-dot active"
+            data-step="1"
+        ></span>
+
+        <span class="progress-line"></span>
+
+        <span
+            class="progress-dot"
+            data-step="2"
+        ></span>
+
+        <span class="progress-line"></span>
+
+        <span
+            class="progress-dot"
+            data-step="3"
+        ></span>
+
+        <span class="progress-line"></span>
+
+        <span
+            class="progress-dot"
+            data-step="4"
+        ></span>
+
+        <span class="progress-line"></span>
+
+        <span
+            class="progress-dot"
+            data-step="5"
+        ></span>
+
+        <span class="progress-line"></span>
+
+        <span
+            class="progress-dot"
+            data-step="6"
+        ></span>
+
+    </div>
+
+
+    <!-- =====================================================
+         ÉTAPE ① — ACCUEIL
+    ====================================================== -->
+
+    <section
+        class="hero"
+        id="heroSection"
+    >
+
+        <!-- =====================================================
+             COMPTE À REBOURS — ACCÈS VERROUILLÉ
+        ====================================================== -->
+        <div class="countdown-screen" id="countdownScreen">
+
+            <div class="countdown-content">
+
+                <p class="countdown-kicker">
+                    Une petite surprise t'attend...
+                </p>
+
+                <div class="countdown-symbol">
+                    ✦
+                </div>
+
+                <h2>
+                    Mais tu vas devoir
+                    <span>patienter encore un peu.</span> 🤍
+                </h2>
+
+                <p class="countdown-intro">
+                    L'enveloppe est encore fermée.<br>
+                    Elle s'ouvrira le <strong>14 octobre à 23h59</strong>.
+                </p>
+
+                <div class="countdown-grid" aria-label="Compte à rebours">
+                    <div class="countdown-unit">
+                        <span id="countdownDays">00</span>
+                        <small>jours</small>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-unit">
+                        <span id="countdownHours">00</span>
+                        <small>heures</small>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-unit">
+                        <span id="countdownMinutes">00</span>
+                        <small>minutes</small>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-unit">
+                        <span id="countdownSeconds">00</span>
+                        <small>secondes</small>
+                    </div>
+                </div>
+
+                <p class="countdown-label">
+                    Jusqu'à l'ouverture de ta surprise...
+                </p>
+
+                <div class="countdown-divider">
+                    <span></span>
+                    ♥
+                    <span></span>
+                </div>
+
+                <p class="countdown-tease">
+                    Ne sois pas trop impatiente... 😏❤️
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- =====================================================
+             MESSAGE APRÈS LE DÉVERROUILLAGE
+        ====================================================== -->
+        <div class="countdown-unlocked" id="countdownUnlocked">
+
+            <div class="countdown-unlocked-symbol">
+                ♥
+            </div>
+
+            <p class="countdown-unlocked-kicker">
+                C'est l'heure.
+            </p>
+
+            <h2>
+                Ta surprise est
+                <span>enfin prête.</span> ❤️
+            </h2>
+
+            <p>
+                Tu as assez attendu maintenant...
+                <br>
+                À toi d'ouvrir l'enveloppe.
+            </p>
+
+            <button
+                class="countdown-open-button"
+                id="countdownOpenButton"
+                type="button"
+            >
+                💌 Ouvrir ma surprise
+                <span>→</span>
+            </button>
+
+        </div>
+
+        <div class="hero-content">
+
+            <p class="hero-subtitle">
+                Une petite surprise pour toi
+            </p>
+
+            <h1>
+                Ma
+                <span>ADJIII</span>
+            </h1>
+
+            <p class="hero-description">
+                J'ai préparé quelque chose de spécial
+                pour une personne qui l'est encore plus.
+                ❤️
+            </p>
+
+            <div class="envelope-container">
+
+                <div
+                    class="envelope"
+                    id="envelope"
+                >
+
+                    <div class="envelope-flap"></div>
+
+                    <div class="envelope-heart">
+                        ♥
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button
+                class="primary-button"
+                id="openSurprise"
+                type="button"
+            >
+                Ouvrir ma surprise
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ÉTAPE ② — LETTRE
+    ====================================================== -->
+
+    <section
+        class="letter-section"
+        id="letterSection"
+    >
+
+        <div class="letter-container">
+
+            <div class="letter-header">
+
+                <p class="small-title">
+                    Pour toi
+                </p>
+
+                <h2>
+                    Quelques mots
+                    <span>❤️</span>
+                </h2>
+
+            </div>
+
+
+            <div class="letter-paper">
+
+                <div
+                    class="letter-text"
+                    id="letterText"
+                ></div>
+
+                <div
+                    class="letter-signature"
+                    id="letterSignature"
+                >
+                    Avec tout mon cœur ❤️
+                </div>
+
+            </div>
+
+
+            <button
+                class="continue-button"
+                id="continueButton"
+                type="button"
+            >
+                Découvrir nos souvenirs
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ÉTAPE ③ — SOUVENIRS
+    ====================================================== -->
+
+    <section
+        class="memories-section"
+        id="memoriesSection"
+    >
+
+        <div class="memories-container">
+
+            <div class="memories-header">
+
+                <p class="small-title">
+                    Quelques souvenirs
+                </p>
+
+                <h2>
+                    Nous deux,
+                    <span>à notre façon.</span>
+                </h2>
+
+                <p>
+                    Parce qu'au fond, ce sont souvent
+                    les petits moments qui deviennent
+                    les meilleurs souvenirs.
+                </p>
+
+            </div>
+
+
+            <div class="memories-grid">
+
+
+                <!-- SOUVENIR 01 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+
+                        <img
+                            src="assets/images/souvenir1.jpg"
+                            alt="Souvenir du 7 août 2025"
+                        >
+
+                        <span class="memory-number">
+                            01
+                        </span>
+
+                    </div>
+
+
+                    <div class="memory-content">
+
+                        <p class="memory-date">
+                            07 août 2025
+                        </p>
+
+                        <h3 class="memory-title">
+                            Chez moi ❤️
+                        </h3>
+
+                        <p>
+
+                            Cette semaine-là, j'avais enfin
+                            eu mon BTS. 🎓
+
+                            Une étape importante pour moi,
+                            et aujourd'hui encore, cette période
+                            me rappelle beaucoup de choses.
+
+                            <br><br>
+
+                            Mais ce que je retiens surtout,
+                            c'est cette période de ma vie où
+                            certaines personnes ont commencé
+                            à prendre encore plus de place
+                            dans mon cœur.
+
+                            <br><br>
+
+                            Et toi, <em>sama xol</em>,
+                            tu fais partie de ces personnes. ❤️
+
+                            <br><br>
+
+                            J'espère qu'on aura encore
+                            beaucoup de moments comme celui-ci
+                            à garder précieusement.
+
+                            <br><br>
+
+                            Et pour tes futurs diplômes,
+                            t'inquiète 😂
+
+                            J'attendrai tous les diplômes
+                            que tu souhaites...
+
+                            <strong>
+                                sauf le doctorat hein,
+                                faut pas exagérer ! 😂
+                            </strong>
+
+                            <br><br>
+
+                            <em>Dama la bëgg.</em> ❤️
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SOUVENIR 02 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+
+                        <img
+                            src="assets/images/souvenir2.jpg"
+                            alt="Souvenir du 28 mai 2026"
+                        >
+
+                        <span class="memory-number">
+                            02
+                        </span>
+
+                    </div>
+
+
+                    <div class="memory-content">
+
+                        <p class="memory-date">
+                            28 mai 2026
+                        </p>
+
+                        <h3 class="memory-title">
+                            FaceTime 📱
+                        </h3>
+
+                        <p>
+
+                            Je dormais tranquillement...
+
+                            jusqu'à ce que Madame décide
+                            de m'appeler en FaceTime. 😂
+
+                            <br><br>
+
+                            Et pourquoi ?
+
+                            Pas pour me raconter quelque chose
+                            d'important...
+
+                            Pas pour me demander si j'allais bien...
+
+                            <br>
+
+                            <strong>
+                                Juste pour me montrer sa dégaine
+                                pour la Tabaski. 😂
+                            </strong>
+
+                            <br><br>
+
+                            À une semaine de ton BAC en plus...
+                            vraiment <em>yaw dafa doy waar</em>. 😂
+
+                            <br><br>
+
+                            Mais bon...
+
+                            même à moitié réveillé,
+                            j'étais content de te voir.
+
+                            <br><br>
+
+                            Parce que finalement,
+                            c'est aussi ça que j'aime chez nous :
+                            ces petits moments qui ne sont prévus
+                            nulle part mais qui deviennent
+                            des souvenirs.
+
+                            <br><br>
+
+                            <em>
+                                Yaw rek nga mën ma yëkkati ci nelaw.
+                            </em> 😂❤️
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SOUVENIR 03 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+
+                        <img
+                            src="assets/images/souvenir3.jpg"
+                            alt="Souvenir du 13 juillet 2026"
+                        >
+
+                        <span class="memory-number">
+                            03
+                        </span>
+
+                    </div>
+
+
+                    <div class="memory-content">
+
+                        <p class="memory-date">
+                            13 juillet 2026
+                        </p>
+
+                        <h3 class="memory-title">
+                            TOP SECRET 😏
+                        </h3>
+
+                        <p>
+
+                            Bon...
+
+                            normalement cette partie
+                            devrait rester <strong>TOP SECRET</strong>. 😏
+
+                            <br><br>
+
+                            Tout ce que je peux dire,
+                            c'est que cette journée est arrivée
+                            juste après une grande réussite.
+
+                            <br><br>
+
+                            Madame venait tout juste
+                            d'avoir son <strong>BAC</strong>. 🎓❤️
+
+                            <br><br>
+
+                            Et franchement...
+
+                            <em>lii mooy xel mi</em>. 😂
+
+                            <br><br>
+
+                            Certains souvenirs n'ont pas besoin
+                            d'être racontés à tout le monde.
+
+                            Il suffit que nous deux,
+                            on sache ce qu'il représente.
+
+                            <br><br>
+
+                            Alors pour celui-là...
+
+                            <strong>
+                                on va garder le secret. 😏❤️
+                            </strong>
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SOUVENIR 04 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+
+                        <img
+                            src="assets/images/souvenir4.jpg"
+                            alt="Souvenir du 22 juillet 2026"
+                        >
+
+                        <span class="memory-number">
+                            04
+                        </span>
+
+                    </div>
+
+
+                    <div class="memory-content">
+
+                        <p class="memory-date">
+                            22 juillet 2026
+                        </p>
+
+                        <h3 class="memory-title">
+                            L'expédition 😂
+                        </h3>
+
+                        <p>
+
+                            Alors celle-là...
+
+                            je ne risque clairement
+                            pas de l'oublier. 😂
+
+                            <br><br>
+
+                            On s'est retrouvés bloqués
+                            dans la voiture à cause
+                            de toute cette pluie.
+
+                            <br><br>
+
+                            Et moi, évidemment,
+                            j'ai voulu faire le mec capable. 😭
+
+                            <br>
+
+                            Monsieur allait sortir
+                            pour aller la chercher
+                            dans les eaux comme si
+                            j'étais dans un film d'action.
+
+                            <br><br>
+
+                            Sauf qu'au final...
+
+                            <strong>
+                                tu as failli nous tuer
+                                tous les deux. 😂😂
+                            </strong>
+
+                            <br><br>
+
+                            Franchement,
+                            <em>lii mooy aventure bi</em>.
+                            😂❤️
+
+                            <br><br>
+
+                            Avec le recul,
+                            c'est devenu un de ces souvenirs
+                            dont on rigole encore.
+
+                            <br><br>
+
+                            Et c'est peut-être ça
+                            le plus important :
+
+                            même dans les situations
+                            les plus improbables,
+                            je préfère les vivre avec toi.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- =====================================================
+                 PETITE GALERIE — 6 SOUVENIRS EN PLUS
+            ====================================================== -->
+            <div class="extra-gallery">
+
+                <div class="extra-gallery-header">
+                    <p class="small-title">Encore quelques moments</p>
+                    <h3>Parce qu'il y en a encore... <span>❤️</span></h3>
+                    <p>Six petites photos de nous, sans grand discours. Juste des souvenirs.</p>
+                </div>
+
+                <div class="extra-gallery-grid">
+                    <button class="extra-photo" type="button" aria-label="Voir le souvenir 05">
+                        <img src="assets/images/souvenir5.jpg" alt="Souvenir 05">
+                        <span>05</span>
+                    </button>
+                    <button class="extra-photo" type="button" aria-label="Voir le souvenir 06">
+                        <img src="assets/images/souvenir6.jpg" alt="Souvenir 06">
+                        <span>06</span>
+                    </button>
+                    <button class="extra-photo" type="button" aria-label="Voir le souvenir 07">
+                        <img src="assets/images/souvenir7.jpg" alt="Souvenir 07">
+                        <span>07</span>
+                    </button>
+                    <button class="extra-photo" type="button" aria-label="Voir le souvenir 08">
+                        <img src="assets/images/souvenir8.jpg" alt="Souvenir 08">
+                        <span>08</span>
+                    </button>
+                    <button class="extra-photo" type="button" aria-label="Voir le souvenir 09">
+                        <img src="assets/images/souvenir9.jpg" alt="Souvenir 09">
+                        <span>09</span>
+                    </button>
+                    <button class="extra-photo" type="button" aria-label="Voir le souvenir 10">
+                        <img src="assets/images/souvenir10.jpg" alt="Souvenir 10">
+                        <span>10</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <button
+                class="next-step-button"
+                id="nextStepButton"
+                type="button"
+            >
+                Il y a encore quelque chose...
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ÉTAPE ④ — 5 RAISONS
+    ====================================================== -->
+
+    <section
+        class="reasons-section"
+        id="reasonsSection"
+    >
+
+        <div class="reasons-container">
+
+            <div class="reasons-header">
+
+                <p class="small-title">
+                    Une petite liste
+                </p>
+
+                <h2>
+                    5 raisons pour lesquelles
+                    <span>je t'aime.</span>
+                </h2>
+
+            </div>
+
+
+            <div
+                class="reason-card"
+                id="reasonCard"
+            >
+
+                <span
+                    class="reason-number"
+                    id="reasonNumber"
+                >
+                    01 / 05
+                </span>
+
+                <h3
+                    class="reason-title"
+                    id="reasonTitle"
+                >
+                    Parce que tu es toi. ❤️
+                </h3>
+
+                <p
+                    class="reason-text"
+                    id="reasonText"
+                >
+                    Tu as ta façon d'être,
+                    tes petites habitudes,
+                    ton caractère...
+                    et c'est justement tout ça
+                    qui fait que tu es unique
+                    à mes yeux.
+                </p>
+
+            </div>
+
+
+            <p
+                class="reason-counter"
+                id="reasonCounter"
+            >
+                1 sur 5
+            </p>
+
+
+            <button
+                class="reason-button"
+                id="reasonButton"
+                type="button"
+            >
+                Découvrir la raison suivante
+                <span>→</span>
+            </button>
+
+
+            <div
+                class="reasons-final"
+                id="reasonsFinal"
+            >
+
+                <div class="reasons-final-symbol">
+                    ✦
+                </div>
+
+                <p>
+                    Et la vraie raison ?
+
+                    Parce qu'au fond,
+                    je n'ai pas besoin d'une liste
+                    pour savoir pourquoi je t'aime.
+
+                    Je t'aime parce que
+                    c'est toi. ❤️
+                </p>
+
+                <button
+                    class="final-continue-button"
+                    id="finalContinueButton"
+                    type="button"
+                >
+                    J'ai encore quelque chose
+                    pour toi
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ÉTAPE ⑤ — CADEAUX
+    ====================================================== -->
+
+    <section
+        class="surprise-section"
+        id="surpriseSection"
+    >
+
+        <div class="surprise-container">
+
+            <p class="small-title">
+                Une dernière petite chose...
+            </p>
+
+            <h2>
+                J'ai préparé quelque chose
+                <br>
+                pour toi
+                <span>❤️</span>
+            </h2>
+
+            <p class="surprise-intro">
+
+                Mais avant d'aller plus loin...
+
+                <br>
+
+                tu dois choisir un petit cadeau.
+
+                <br><br>
+
+                <em>
+                    Fais confiance à ton instinct. 😏
+                </em>
+
+            </p>
+
+
+            <div class="gift-container">
+
+
+                <button
+                    class="gift-card"
+                    data-gift="0"
+                    type="button"
+                    aria-label="Choisir le petit mot"
+                >
+
+                    <span class="gift-front">
+
+                        <span class="gift-number">
+                            01
+                        </span>
+
+                        <span class="gift-icon">
+                            💌
+                        </span>
+
+                        <span class="gift-label">
+                            Un petit mot
+                        </span>
+
+                    </span>
+
+                    <span class="gift-back">
+
+                        <span class="gift-back-heart">
+                            ♥
+                        </span>
+
+                        <span class="gift-back-label">
+                            Choisi avec amour
+                        </span>
+
+                        <span class="gift-back-small">
+                            💌
+                        </span>
+
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="gift-card"
+                    data-gift="1"
+                    type="button"
+                    aria-label="Choisir la surprise"
+                >
+
+                    <span class="gift-front">
+
+                        <span class="gift-number">
+                            02
+                        </span>
+
+                        <span class="gift-icon">
+                            🎁
+                        </span>
+
+                        <span class="gift-label">
+                            Une surprise
+                        </span>
+
+                    </span>
+
+                    <span class="gift-back">
+
+                        <span class="gift-back-heart">
+                            ♥
+                        </span>
+
+                        <span class="gift-back-label">
+                            Peut-être celle-ci...
+                        </span>
+
+                        <span class="gift-back-small">
+                            🎁
+                        </span>
+
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="gift-card"
+                    data-gift="2"
+                    type="button"
+                    aria-label="Choisir quelque chose"
+                >
+
+                    <span class="gift-front">
+
+                        <span class="gift-number">
+                            03
+                        </span>
+
+                        <span class="gift-icon">
+                            🌹
+                        </span>
+
+                        <span class="gift-label">
+                            Quelque chose
+                        </span>
+
+                    </span>
+
+                    <span class="gift-back">
+
+                        <span class="gift-back-heart">
+                            ♥
+                        </span>
+
+                        <span class="gift-back-label">
+                            Une petite attention
+                        </span>
+
+                        <span class="gift-back-small">
+                            🌹
+                        </span>
+
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <div
+                class="gift-message"
+                id="giftMessage"
+            >
+
+                <div class="gift-message-symbol">
+                    ♥
+                </div>
+
+                <p
+                    class="gift-message-text"
+                    id="giftMessageText"
+                ></p>
+
+                <div class="gift-message-line">
+                    ✦
+                </div>
+
+                <p class="gift-message-small">
+                    Et tu pensais vraiment que
+                    j'allais te laisser partir comme ça ? 😂
+                </p>
+
+            </div>
+
+
+            <button
+                class="unlock-button"
+                id="unlockButton"
+                type="button"
+            >
+                J'ai encore quelque chose
+                pour toi
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ÉTAPE ⑥ — GÂTEAU
+    ====================================================== -->
+
+    <section
+        class="cake-section"
+        id="cakeSection"
+    >
+
+        <div class="cake-container">
+
+            <p class="small-title">
+                Enfin...
+            </p>
+
+            <h2>
+                Joyeux anniversaire
+                <span>❤️</span>
+            </h2>
+
+            <p class="cake-intro">
+                Il ne reste plus qu'une seule chose...
+                <br>
+                fais un vœu. ✨
+            </p>
+
+
+            <div
+                class="cake-area"
+                id="cakeArea"
+                role="button"
+                tabindex="0"
+                aria-label="Souffler les bougies"
+            >
+
+                <div class="cake">
+
+                    <div class="candle candle-one">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle candle-two">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle candle-three">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="cake-top">
+
+                        <div class="cream-dot dot-one"></div>
+                        <div class="cream-dot dot-two"></div>
+                        <div class="cream-dot dot-three"></div>
+                        <div class="cream-dot dot-four"></div>
+
+                    </div>
+
+                    <div class="cake-body">
+
+                        <div class="cake-decoration">
+                            ♥
+                        </div>
+
+                        <div class="cake-decoration second">
+                            ♥
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p
+                class="blow-message"
+                id="blowMessage"
+            >
+                Appuie sur le gâteau
+                pour souffler les bougies ✨
+            </p>
+
+
+            <div
+                class="birthday-final"
+                id="birthdayFinal"
+            >
+
+                <div class="final-confetti-symbol">
+                    ✦
+                </div>
+
+                <h3>
+                    Joyeux anniversaire
+                    <br>
+                    ma ADJIII ❤️
+                </h3>
+
+                <p>
+                    J'espère que cette petite surprise
+                    t'aura fait sourire.
+                </p>
+
+                <p>
+                    Je te souhaite tout le bonheur,
+                    toute la réussite et tout l'amour
+                    que tu mérites.
+                </p>
+
+                <p class="final-love">
+                    Dama la bëgg. ❤️
+                </p>
+
+                <span class="final-signature">
+                    — Moi, toujours.
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         LIGHTBOX
+    ====================================================== -->
+
+    <div
+        class="memory-lightbox"
+        id="memoryLightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Souvenir en grand"
+    >
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose"
+            type="button"
+            aria-label="Fermer"
+        >
+            ×
+        </button>
+
+        <div class="lightbox-content">
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt="Souvenir"
+            >
+
+            <p
+                class="lightbox-caption"
+                id="lightboxCaption"
+            ></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
